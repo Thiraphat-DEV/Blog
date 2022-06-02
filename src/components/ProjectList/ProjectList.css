@@ -1,0 +1,47 @@
+.project-list {
+	display: grid;
+	margin-top: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+}
+
+.project-list a  {
+	background-color: #f7f7f7;
+	padding: 16px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 5px rgba(0, 9, 9, 0.5);
+	text-decoration: none;
+	color: inherit;
+}
+
+.project-list h3{
+	font-size: 0.9rem;
+	color: var(--heading-color);
+	
+}
+
+.project-list p {
+	color: var(--text-color);
+	font-size: .9rem;
+
+}
+
+.project-list .assigned-to {
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top:2px solid #e3e3;
+}
+
+.project-list ul {
+	margin: 10px 0;
+	display: flex;
+}
+
+.project-list li {
+	margin-right: 10px;
+}
+
+.project-list .avatar {
+	width: 30px;
+	height: 30px;
+}
