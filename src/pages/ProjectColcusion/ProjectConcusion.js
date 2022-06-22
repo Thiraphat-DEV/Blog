@@ -33,7 +33,7 @@ const ProjectConcusion = ({ project }) => {
           </div>
         ))}
       </div>
-      {/* fix bug by id user */}
+
       {user.uid === project.id && (
         <button className="btn" onClick={handleDelete}>
           Mask as Complete
