@@ -1,8 +1,67 @@
 .auth-form {
-	max-width: 360px;
-	margin: 60px auto;
-	padding: 40px;
-	border: 1px solid #ddd;
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
-	background: #fff;
+  max-width: 360px;
+  margin: 60px auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.btn {
+  position: relative;
+  z-index: 0;
+  width: 120px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1rem;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #1a232a;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: conic-gradient(
+    transparent,
+    rgba(168, 239, 255, 1),
+    transparent 30%
+  );
+  animation: rotate 4s linear infinite;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #000;
+  border-radius: 5px;
+}
+.btn-demo::after {
+  animation: opacityChange 5s infinite linear;
+}
+
+@keyframes opacityChange {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }

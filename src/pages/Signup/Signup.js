@@ -13,11 +13,11 @@ const Signup = () => {
 
   const submitForm = (e) => {
     e.preventDefault();
-    signup(email,password,displayName,thumnail)
-    setEmail('')
-    setPassword('')
-    setDisplayName('')
-    setThumnail('')
+    signup(email, password, displayName, thumnail);
+    setEmail("");
+    setPassword("");
+    setDisplayName("");
+    setThumnail("");
   };
   //handle image from user
   const handleThumnail = (e) => {
@@ -87,8 +87,12 @@ const Signup = () => {
         />
         {thumnailError && <p className="error">{thumnailError}</p>}
       </label>
-      {!isPending && <button className="btn">Signup</button>}
-      {isPending && <button className="btn" disabled>Loading...</button>}
+        {!isPending && <button className="btn">Signup</button>}
+        {isPending && (
+          <button className="btn" disabled>
+            Loading...
+          </button>
+        )}
       {error && <p className="error">{error}</p>}
     </form>
   );

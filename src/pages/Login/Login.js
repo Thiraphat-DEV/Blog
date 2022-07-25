@@ -40,7 +40,7 @@ const Login = () => {
           value={password}
         />
       </label>
-      <button className="btn">Login</button>
+      <button className="btn btn-demo">Login</button>
       {error && <p className="error">{error}</p>}
     </form>
   );
