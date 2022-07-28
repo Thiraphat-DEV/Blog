@@ -22,7 +22,7 @@ const ProjectComment = ({ project }) => {
       //genrate user id with coop number
       id: Math.random(),
     };
-    // console.log(addComment)
+//r console.log(addComment)
     await updateDocument(project.id, {
       comments: [...project.comments, addComment], // duplicate comment by old comment + newComment
     });

@@ -24,3 +24,6 @@ yarn-error.log*
 
 # ignore config firebase
 ../firebase/config
+/test-results/
+/playwright-report/
+/playwright/.cache/
