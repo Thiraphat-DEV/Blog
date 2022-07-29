@@ -22,6 +22,7 @@ const Login = () => {
       <label htmlFor="email">
         <span>Email: </span>
         <input
+        name="email"
           type="email"
           required
           placeholder="Enter Email"
@@ -33,6 +34,7 @@ const Login = () => {
       <label htmlFor="password">
         <span>Password: </span>
         <input
+        name="password"
           type="password"
           required
           placeholder="Enter Password"
