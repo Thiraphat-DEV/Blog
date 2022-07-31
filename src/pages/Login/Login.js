@@ -18,9 +18,9 @@ const Login = () => {
 
   return (
     <form className="auth-form" onSubmit={submitForm}>
-      <h2>Login</h2>
+      <h2 className="title">Login</h2>
       <label htmlFor="email">
-        <span>Email: </span>
+        <span className="mail">Email: </span>
         <input
         name="email"
           type="email"
@@ -32,7 +32,7 @@ const Login = () => {
       </label>
 
       <label htmlFor="password">
-        <span>Password: </span>
+        <span className="pass">Password: </span>
         <input
         name="password"
           type="password"

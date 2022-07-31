@@ -45,7 +45,7 @@ const Signup = () => {
     <form className="auth-form" onSubmit={submitForm}>
       <h2>Signup</h2>
       <label htmlFor="email">
-        <span>Email: </span>
+        <span className="mail">Email: </span>
         <input
           type="email"
           required
@@ -56,7 +56,7 @@ const Signup = () => {
       </label>
 
       <label htmlFor="password">
-        <span>Password: </span>
+        <span className="pass">Password: </span>
         <input
           type="password"
           required
