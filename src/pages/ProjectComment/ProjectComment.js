@@ -34,7 +34,7 @@ const ProjectComment = ({ project }) => {
   };
   return (
     <div className="project-comments">
-      <h4>Comments</h4>
+      <h4 className="h4">Comments</h4>
       {/* error of map */}
       <ul>
         {project.comments.length > 0 &&

@@ -25,7 +25,7 @@ const ProjectConcusion = ({ project }) => {
       </p>
 
       <p className="details">{project.detail}</p>
-      <h4>Project Assigned By</h4>
+      <h4 className="h4">Project Assigned By</h4>
       <div className="assigned-users">
         {project.assignUserList.map((user) => (
           <div key={user.id}>
