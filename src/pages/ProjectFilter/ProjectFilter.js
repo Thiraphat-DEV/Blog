@@ -20,6 +20,7 @@ const ProjectFilter = ({ currentFilter, changeFilter }) => {
       <nav>
         {filterList.map((filter) => (
           <button
+          
             key={filter}
             onClick={() => handleClick(filter)}
             className={currentFilter === filter ? "active" : ""}
